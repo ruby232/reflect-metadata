@@ -13,9 +13,6 @@ See the Apache Version 2.0 License for specific language governing permissions
 and limitations under the License.
 ***************************************************************************** */
 
-// The "reflect-metadata" module has no imports or exports, but can be imported by modules to load the polyfill.
-//export { };
-
 export namespace Reflect {
         /**
           * Applies a set of decorators to a target object.
