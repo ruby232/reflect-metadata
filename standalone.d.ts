@@ -12,7 +12,7 @@ MERCHANTABLITY OR NON-INFRINGEMENT.
 See the Apache Version 2.0 License for specific language governing permissions
 and limitations under the License.
 ***************************************************************************** */
-export declare namespace Reflect {
+export namespace Reflect {
     /**
       * Applies a set of decorators to a target object.
       * @param decorators An array of decorators.

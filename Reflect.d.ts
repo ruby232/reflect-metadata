@@ -17,11 +17,8 @@ and limitations under the License.
 //       For CommonJS/AMD/UMD/SystemJS declarations please use 'index.d.ts'.
 //       For standalone browser declarations, please use 'standalone.d.ts'.
 
-declare module "reflect-metadata" {
-    // The "reflect-metadata" module has no imports or exports, but can be used by modules to load the polyfill.
-}
 
-export declare namespace Reflect {
+export namespace Reflect {
     /**
       * Applies a set of decorators to a target object.
       * @param decorators An array of decorators.
