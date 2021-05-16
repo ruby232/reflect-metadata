@@ -14,10 +14,9 @@ and limitations under the License.
 ***************************************************************************** */
 
 // The "reflect-metadata" module has no imports or exports, but can be imported by modules to load the polyfill.
-export { };
+//export { };
 
-declare global {
-    namespace Reflect {
+export namespace Reflect {
         /**
           * Applies a set of decorators to a target object.
           * @param decorators An array of decorators.
@@ -488,4 +487,3 @@ declare global {
           */
         function deleteMetadata(metadataKey: any, target: Object, propertyKey: string | symbol): boolean;
     }
-}

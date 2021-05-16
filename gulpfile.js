@@ -36,7 +36,7 @@ gulp.task("build:spec", () => gulp
     }))
     .pipe(gulp.dest("docs")));
 
-gulp.task("build", ["build:tests", "build:spec"]);
+gulp.task("build", ["build:spec"]);
 
 gulp.task("use-polyfill", () => {
     process.env["REFLECT_METADATA_USE_MAP_POLYFILL"] = "true";

@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 /*! *****************************************************************************
 Copyright (C) Microsoft. All rights reserved.
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use
@@ -1128,5 +1130,5 @@ var Reflect;
             return obj;
         }
     });
-})(Reflect || (Reflect = {}));
+})(Reflect = exports.Reflect || (exports.Reflect = {}));
 //# sourceMappingURL=Reflect.js.map

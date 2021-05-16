@@ -21,7 +21,7 @@ declare module "reflect-metadata" {
     // The "reflect-metadata" module has no imports or exports, but can be used by modules to load the polyfill.
 }
 
-declare namespace Reflect {
+export declare namespace Reflect {
     /**
       * Applies a set of decorators to a target object.
       * @param decorators An array of decorators.
