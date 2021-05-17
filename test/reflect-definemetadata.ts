@@ -1,7 +1,7 @@
 // 4.1.2 Reflect.defineMetadata ( metadataKey, metadataValue, target, propertyKey )
 // https://rbuckton.github.io/reflect-metadata/#reflect.definemetadata
 
-import "../Reflect";
+import { Reflect } from "../index";
 import { assert } from "chai";
 
 describe("Reflect.defineMetadata", () => {

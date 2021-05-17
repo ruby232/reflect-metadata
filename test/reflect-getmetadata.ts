@@ -1,7 +1,7 @@
 // 4.1.5 Reflect.getMetadata ( metadataKey, target [, propertyKey] )
 // https://rbuckton.github.io/reflect-metadata/#reflect.getmetadata
 
-import "../Reflect";
+import { Reflect } from "../index";
 import { assert } from "chai";
 
 describe("Reflect.getMetadata", () => {

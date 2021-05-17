@@ -12,6 +12,7 @@
     "noImplicitThis": true
   },
   "files": [
+    "index.ts",
     "Reflect.ts"
   ]
 }

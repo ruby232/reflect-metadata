@@ -1,7 +1,7 @@
 // 4.1.9 Reflect.getOwnMetadataKeysKeys ( target [, propertyKey] )
 // https://rbuckton.github.io/reflect-metadata/#reflect.getownmetadatakeys
 
-import "../Reflect";
+import { Reflect } from "../index";
 import { assert } from "chai";
 
 describe("Reflect.deleteMetadata", () => {

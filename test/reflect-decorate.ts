@@ -1,6 +1,6 @@
 // Reflect.decorate ( decorators, target [, propertyKey [, descriptor] ] )
 
-import "../Reflect";
+import { Reflect } from "../index";
 import { assert } from "chai";
 
 describe("Reflect.decorate", () => {

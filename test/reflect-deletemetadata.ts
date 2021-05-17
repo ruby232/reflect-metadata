@@ -1,7 +1,7 @@
 // 4.1.10 Reflect.deleteMetadata ( metadataKey, target [, propertyKey] )
 // https://rbuckton.github.io/reflect-metadata/#reflect.deletemetadata
 
-import "../Reflect";
+import { Reflect } from "../index";
 import { assert } from "chai";
 
 describe("Reflect.deleteMetadata", () => {

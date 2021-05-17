@@ -14,10 +14,17 @@ const tests = tsb.create("test/tsconfig.json");
 let project = debugProject;
 
 gulp.task("release", () => { project = releaseProject; });
-gulp.task("clean", () => del(["Reflect.js", "Reflect.js.map", "test/**/*.js", "test/**/*.js.map"]));
+gulp.task("clean", () => del([
+    "Reflect.js",
+    "Reflect.js.map",
+    "index.js",
+    "index.js.map",
+    "test/**/*.js",
+    "test/**/*.js.map"]
+));
 
 gulp.task("build:reflect", () => gulp
-    .src(["Reflect.ts"])
+    .src(["Reflect.ts", "index.ts"])
     .pipe(project())
     .pipe(gulp.dest(".")));
 
@@ -56,7 +63,7 @@ gulp.task("test:use-polyfill", ["build:tests", "use-polyfill"], () => {
         .pipe(mocha({ reporter: "dot" }));
 });
 
-gulp.task("watch:reflect", () => gulp.watch(["Reflect.ts", "tsconfig.json", "test/**/*.ts", "test/**/tsconfig.json"], ["test"]));
+gulp.task("watch:reflect", () => gulp.watch(["Reflect.ts", "index.ts", "tsconfig.json", "test/**/*.ts", "test/**/tsconfig.json"], ["test"]));
 gulp.task("watch:spec", () => gulp.watch(["spec.html"], ["build:spec"]));
 gulp.task("watch", ["watch:reflect", "watch:spec"], () => {
     const server = gls.static("docs", 8080);
